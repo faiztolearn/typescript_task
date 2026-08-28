@@ -44,8 +44,8 @@ type CartItem = {
 type CustomerInfo = {
   voucherValue: number;
   isPremiumMember: boolean;
-  rewardPointRate: number; // Rp50.000 spent = 1 point
-  vatRate: number; // 11% = 0.11
+  rewardPointRate: number; 
+  vatRate: number;
 };
 
 const cart: CartItem[] = [
