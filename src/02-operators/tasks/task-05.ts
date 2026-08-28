@@ -33,3 +33,51 @@
  * - Calculate the remaining scholarship budget.
  * - Display whether the student is accepted.
  */
+
+type StudentCandidate = {
+  name: string;
+  gpa: number;
+  familyIncome: number;
+  competitionCount: number;
+  hasDisciplinaryRecord: boolean;
+  documentsComplete: boolean;
+};
+
+const student: StudentCandidate = {
+  name: "Alya Putri",
+  gpa: 3.89,
+  familyIncome: 4200000,
+  competitionCount: 4,
+  hasDisciplinaryRecord: false,
+  documentsComplete: true
+};
+
+const totalBudget: number = 500000000;
+
+const isGpaEligible: boolean = student.gpa >= 3.75;
+const isIncomeEligible: boolean = student.familyIncome < 5000000;
+const isCompetitionEligible: boolean = student.competitionCount >= 3;
+const isRecordClean: boolean = !student.hasDisciplinaryRecord; // Bebas dari pelanggaran
+const isDocsComplete: boolean = student.documentsComplete;
+
+const isAccepted: boolean = 
+  isGpaEligible && 
+  isIncomeEligible && 
+  isCompetitionEligible && 
+  isRecordClean && 
+  isDocsComplete;
+
+const scholarshipAmount: number = isAccepted ? 12000000 : 0;
+
+const remainingBudget: number = totalBudget - scholarshipAmount;
+
+console.log(`=== University Scholarship Selection: ${student.name} ===`);
+console.log("GPA Requirement Met (>= 3.75):", isGpaEligible);
+console.log("Income Requirement Met (< 5.000.000):", isIncomeEligible);
+console.log("Competition Requirement Met (>= 3):", isCompetitionEligible);
+console.log("Clean Disciplinary Record:", isRecordClean);
+console.log("Documents Complete:", isDocsComplete);
+console.log("-----------------------------------------");
+console.log("Is Student Accepted:", isAccepted);
+console.log("Scholarship Amount Received:", scholarshipAmount);
+console.log("Remaining Total Budget:", remainingBudget);

@@ -19,7 +19,7 @@
 const studentName: string = "Nadia Putri";
 const studentID: string = "ST2026045";
 const assignmentScore: number = 88.5;
-const final: number = 91.5; 
+const final: number = 91.5;  
 
 console.log(studentName)
 console.log(studentID)

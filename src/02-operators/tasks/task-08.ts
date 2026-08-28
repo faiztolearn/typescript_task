@@ -24,3 +24,44 @@
  * - Final bill
  * - Green Energy Program eligibility
  */
+
+type SmartHomeData = {
+  previousMeter: number;
+  currentMeter: number;
+  pricePerKwh: number;
+  hasSolarPanel: boolean;
+  isEnergySavingMode: boolean;
+};
+
+const homeData: SmartHomeData = {
+  previousMeter: 25640,
+  currentMeter: 25892,
+  pricePerKwh: 1650,
+  hasSolarPanel: true,
+  isEnergySavingMode: false
+};
+
+const totalEnergyConsumption: number = homeData.currentMeter - homeData.previousMeter;
+
+const initialBill: number = totalEnergyConsumption * homeData.pricePerKwh;
+
+const solarDiscountRate: number = homeData.hasSolarPanel ? 0.20 : 0;
+const energySavingDiscountRate: number = homeData.isEnergySavingMode ? 0.05 : 0;
+
+const totalDiscountRate: number = solarDiscountRate + energySavingDiscountRate;
+const discountAmount: number = initialBill * totalDiscountRate;
+
+const finalBill: number = initialBill - discountAmount;
+
+const isGreenEnergyEligible: boolean = 
+  homeData.hasSolarPanel && 
+  totalEnergyConsumption < 300 && 
+  homeData.isEnergySavingMode;
+
+console.log("=== Smart Home Electricity Summary ===");
+console.log("Total Energy Consumption (kWh):", totalEnergyConsumption);
+console.log("Initial Bill:", initialBill);
+console.log("Discount Amount:", discountAmount);
+console.log("--------------------------------------");
+console.log("Final Bill:", finalBill);
+console.log("Green Energy Program Eligibility:", isGreenEnergyEligible);
