@@ -25,13 +25,11 @@ const friedRice: Item = { name: "Fried Rice", price: 18000, quantity: 3 };
 const mineralWater: Item = { name: "Mineral Water", price: 5000, quantity: 2 };
 const discount: number = 10000;
 
-// 1. Kalkulasi
 const totalFoodPrice: number = friedRice.price * friedRice.quantity;
 const totalDrinkPrice: number = mineralWater.price * mineralWater.quantity;
 const grandTotal: number = totalFoodPrice + totalDrinkPrice;
 const finalPayment: number = grandTotal - discount;
 
-// 2. Output
 console.log("=== Rincian Pembayaran Kantin ===");
 console.log("Total Food Price:", totalFoodPrice);
 console.log("Total Drink Price:", totalDrinkPrice);
