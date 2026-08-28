@@ -21,3 +21,5 @@
  * 2. Store the temperature data in a single collection.
  * 3. Display the temperature data using console.log.
  */
+
+console.log("--- Data Suhu ---");
