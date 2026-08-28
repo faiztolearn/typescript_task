@@ -10,3 +10,52 @@
  * 
  * display the book data using console.log.
  */
+
+
+
+type Book = {
+  isbn: string;
+  title: string;
+  author: string;
+  totalPages: number;
+  category: string;
+  isAvailable: boolean;
+};
+
+
+const book1: Book = {
+  isbn: "978-602-8519-93-9",
+  title: "Laskar Pelangi",
+  author: "Andrea Hirata",
+  totalPages: 529,
+  category: "Fiction",
+  isAvailable: true,
+};
+
+const book2: Book = {
+  isbn: "978-013-2350-88-4",
+  title: "Clean Code",
+  author: "Robert C. Martin",
+  totalPages: 464,
+  category: "Programming",
+  isAvailable: false,
+};
+
+const book3: Book = {
+  isbn: "978-059-6517-74-8",
+  title: "JavaScript: The Good Parts",
+  author: "Douglas Crockford",
+  totalPages: 172,
+  category: "Technology",
+  isAvailable: true,
+};
+
+
+console.log("--- Katalog Buku 1 ---");
+console.log(book1);
+
+console.log("\n--- Katalog Buku 2 ---");
+console.log(book2);
+
+console.log("\n--- Katalog Buku 3 ---");
+console.log(book3);
