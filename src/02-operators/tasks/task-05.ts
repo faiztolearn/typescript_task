@@ -57,7 +57,7 @@ const totalBudget: number = 500000000;
 const isGpaEligible: boolean = student.gpa >= 3.75;
 const isIncomeEligible: boolean = student.familyIncome < 5000000;
 const isCompetitionEligible: boolean = student.competitionCount >= 3;
-const isRecordClean: boolean = !student.hasDisciplinaryRecord; // Bebas dari pelanggaran
+const isRecordClean: boolean = !student.hasDisciplinaryRecord; 
 const isDocsComplete: boolean = student.documentsComplete;
 
 const isAccepted: boolean = 
