@@ -14,3 +14,19 @@
  * 3. Display the evaluation result. If eligible will display "Bonus Approved", 
  * otherwise display "Bonus not approved"
  */
+
+type EmployeeEvaluation= {
+    name: string;
+    score: number;
+}
+
+const employee: EmployeeEvaluation = {
+    name: "rudi",
+    score: 90,
+}
+
+if (employee.score >= 80) {
+    console.log("approved");
+} else {
+    console.log("prankk")
+}

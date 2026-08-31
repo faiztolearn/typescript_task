@@ -42,7 +42,6 @@ const homeData: SmartHomeData = {
 };
 
 const totalEnergyConsumption: number = homeData.currentMeter - homeData.previousMeter;
-
 const initialBill: number = totalEnergyConsumption * homeData.pricePerKwh;
 
 const solarDiscountRate: number = homeData.hasSolarPanel ? 0.20 : 0;
@@ -52,7 +51,6 @@ const totalDiscountRate: number = solarDiscountRate + energySavingDiscountRate;
 const discountAmount: number = initialBill * totalDiscountRate;
 
 const finalBill: number = initialBill - discountAmount;
-
 const isGreenEnergyEligible: boolean = 
   homeData.hasSolarPanel && 
   totalEnergyConsumption < 300 && 

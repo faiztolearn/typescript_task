@@ -28,5 +28,5 @@ const participants: Participant[] = [
   { studentId: "ST003", name: "Budi Santoso", age: 16, hasPaid: true }
 ];
 
-console.log("\n--- Data Peserta dalam Bentuk Tabel ---");
-console.table(participants);
+console.log("--- Data Peserta dalam Bentuk Tabel ---");
+console.table(participants[0].age);

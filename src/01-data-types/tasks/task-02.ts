@@ -33,3 +33,4 @@ console.log("Diskon (%):", discountPercentage);
 console.log("Jumlah Beli:", quantity);
 console.log("Bebas Ongkir:", isFreeShipping);
 console.log("Stok Tersedia:", stock);
+console.log("currentStock:", stock - quantity)

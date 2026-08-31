@@ -53,11 +53,10 @@ const student: StudentCandidate = {
 };
 
 const totalBudget: number = 500000000;
-
 const isGpaEligible: boolean = student.gpa >= 3.75;
 const isIncomeEligible: boolean = student.familyIncome < 5000000;
 const isCompetitionEligible: boolean = student.competitionCount >= 3;
-const isRecordClean: boolean = !student.hasDisciplinaryRecord; 
+const isRecordClean: boolean = !student.hasDisciplinaryRecord;
 const isDocsComplete: boolean = student.documentsComplete;
 
 const isAccepted: boolean = 
@@ -68,10 +67,9 @@ const isAccepted: boolean =
   isDocsComplete;
 
 const scholarshipAmount: number = isAccepted ? 12000000 : 0;
-
 const remainingBudget: number = totalBudget - scholarshipAmount;
 
-console.log(`=== University Scholarship Selection: ${student.name} ===`);
+console.log(`=== University Scholarship Selection: {student.name} ===`);
 console.log("GPA Requirement Met (>= 3.75):", isGpaEligible);
 console.log("Income Requirement Met (< 5.000.000):", isIncomeEligible);
 console.log("Competition Requirement Met (>= 3):", isCompetitionEligible);

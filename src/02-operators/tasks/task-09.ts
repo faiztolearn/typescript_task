@@ -68,22 +68,17 @@ const productSubtotal: number = cart.reduce(
 
 const membershipDiscountRate: number = customer.isPremiumMember ? 0.10 : 0;
 const membershipDiscount: number = productSubtotal * membershipDiscountRate;
-
 const priceAfterDiscount: number = productSubtotal - membershipDiscount;
 
 const voucherDeduction: number = customer.voucherValue;
-
 const paymentBeforeTax: number = priceAfterDiscount - voucherDeduction;
-
 const vat: number = paymentBeforeTax * customer.vatRate;
 
 const finalPayment: number = paymentBeforeTax + vat;
-
 const rewardPoints: number = Math.floor(paymentBeforeTax / customer.rewardPointRate);
-
 const isFreeShippingEligible: boolean =
   customer.isPremiumMember || paymentBeforeTax > 1500000;
-
+  
 console.log("=== Online Marketplace Checkout Receipt ===");
 console.log("Product Subtotal:", productSubtotal);
 console.log("Membership Discount (10%):", membershipDiscount);

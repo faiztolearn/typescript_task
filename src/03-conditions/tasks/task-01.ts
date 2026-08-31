@@ -1,5 +1,6 @@
 /**
- * SMK Telkom Malang is preparing the graduation list for Grade 12 students. A student is eligible to graduate only if all of the following requirements are satisfied:
+ * SMK Telkom Malang is preparing the graduation list for Grade 12 students. A student is eligible to graduate 
+ * only if all of the following requirements are satisfied:
 
  * - Final score is at least 75
  * - Attendance is at least 90%
@@ -20,3 +21,24 @@
  * will be display "Congratulations! You are eligible to graduate.", 
  * otherwise display "You are not eligible to graduate."
  */
+
+type StudentData = {
+  studentName: string;
+  finalScore: number;
+  attendance: number;
+  tuitionPaid: boolean;
+};
+
+const student: StudentData = {
+    studentName: "Alya Putri",
+    finalScore: 85,
+    attendance: 94,
+    tuitionPaid: false
+}
+
+if (student.finalScore >= 75 && student.attendance >= 90 && student.tuitionPaid){
+
+    console.log("congrats yea");
+} else {
+    console.log("kasian deh luwh");
+}

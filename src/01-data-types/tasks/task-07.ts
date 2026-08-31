@@ -17,12 +17,10 @@ type CourseRegistration = {
   studentId: string;
   studentName: string;
   gradeLevel: string;
-
   courseId: string;
   courseTitle: string;
   instructorName: string;
   totalLearningHours: number;
-
   registrationDate: string;
   isPaymentCompleted: boolean;
 };
@@ -44,7 +42,7 @@ const registration2: CourseRegistration = {
   studentName: "Nadia Putri",
   gradeLevel: "10",
   courseId: "CRS-PY01",
-  courseTitle: "Python for Beginners",
+  courseTitle: "Python forBeginners",
   instructorName: "Bu Budi",
   totalLearningHours: 30,
   registrationDate: "2026-08-17",

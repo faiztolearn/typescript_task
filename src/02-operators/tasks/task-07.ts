@@ -26,7 +26,7 @@ type HotelBooking = {
   roomPricePerNight: number;
   nightsStayed: number;
   serviceCharge: number;
-  taxRate: number; // 11% = 0.11
+  taxRate: number; 
   isVipMember: boolean;
 };
 

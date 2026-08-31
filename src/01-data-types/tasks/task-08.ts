@@ -38,5 +38,5 @@ const temperatureData: TemperatureReading[] = [
 { time: "15:00", temperature: 29.3 },
 ];
 
-console.log("\n--- Data Suhu dalam Bentuk Array ---");
+console.log("--- Data Suhu dalam Bentuk Array ---");
 console.log(temperatureData);

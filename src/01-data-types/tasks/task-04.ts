@@ -54,8 +54,8 @@ const book3: Book = {
 console.log("--- Katalog Buku 1 ---");
 console.log(book1);
 
-console.log("\n--- Katalog Buku 2 ---");
+console.log("--- Katalog Buku 2 ---");
 console.log(book2);
 
-console.log("\n--- Katalog Buku 3 ---");
+console.log("--- Katalog Buku 3 ---");
 console.log(book3);

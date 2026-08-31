@@ -23,7 +23,7 @@ type StudentEligibility = {
 
 const studentEligibility: StudentEligibility = {
   finalScore: 82,
-  attendance: 94,
+  attendance: 98,
   tuitionPaid: true,
 };
 
