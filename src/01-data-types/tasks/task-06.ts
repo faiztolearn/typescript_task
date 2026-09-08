@@ -54,8 +54,8 @@ const product3: Product = {
 console.log("--- Data Produk 1 ---");
 console.log(product1);
 
-console.log("\n--- Data Produk 2 ---");
+console.log("--- Data Produk 2 ---");
 console.log(product2);
 
-console.log("\n--- Data Produk 3 ---");
+console.log("--- Data Produk 3 ---");
 console.log(product3);

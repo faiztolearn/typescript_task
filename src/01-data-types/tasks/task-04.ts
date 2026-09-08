@@ -34,19 +34,19 @@ const book1: Book = {
 
 const book2: Book = {
   isbn: "978-013-2350-88-4",
-  title: "Clean Code",
-  author: "Robert C. Martin",
+  title: "Negeri para Bedebah",
+  author: "Tere Liye",
   totalPages: 464,
-  category: "Programming",
+  category: "Fiction",
   isAvailable: false,
 };
 
 const book3: Book = {
   isbn: "978-059-6517-74-8",
-  title: "JavaScript: The Good Parts",
-  author: "Douglas Crockford",
+  title: "Bandit-bandit Berkelas",
+  author: "Tere Liye",
   totalPages: 172,
-  category: "Technology",
+  category: "Fiction",
   isAvailable: true,
 };
 

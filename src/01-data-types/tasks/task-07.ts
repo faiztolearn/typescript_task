@@ -64,8 +64,8 @@ const registration3: CourseRegistration = {
 console.log("--- Data Pendaftaran 1 ---");
 console.log(registration1);
 
-console.log("\n--- Data Pendaftaran 2 ---");
+console.log("--- Data Pendaftaran 2 ---");
 console.log(registration2);
 
-console.log("\n--- Data Pendaftaran 3 ---");
+console.log("--- Data Pendaftaran 3 ---");
 console.log(registration3);

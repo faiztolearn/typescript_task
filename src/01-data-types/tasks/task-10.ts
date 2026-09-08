@@ -32,5 +32,5 @@ const shoppingCart: ShoppingCartItem[] = [
   { productCode: "HP004", productName: "Gaming Headset", price: 720000, quantity: 1, freeShipping: true }
 ];
 
-console.log("\n--- Data Keranjang Belanja dalam Bentuk Tabel ---");
+console.log("--- Data Keranjang Belanja dalam Bentuk Tabel ---");
 console.table(shoppingCart);

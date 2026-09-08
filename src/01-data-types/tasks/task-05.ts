@@ -57,8 +57,8 @@ const attendance3: Attendance = {
 console.log("--- Data Presensi 1 ---");
 console.log(attendance1);
 
-console.log("\n--- Data Presensi 2 ---");
+console.log("--- Data Presensi 2 ---");
 console.log(attendance2);
 
-console.log("\n--- Data Presensi 3 ---");
+console.log("--- Data Presensi 3 ---");
 console.log(attendance3);
