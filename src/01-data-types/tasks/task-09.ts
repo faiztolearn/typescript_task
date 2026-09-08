@@ -29,4 +29,4 @@ const participants: Participant[] = [
 ];
 
 console.log("--- Data Peserta dalam Bentuk Tabel ---");
-console.table(participants[0].age);
+console.table(participants);
