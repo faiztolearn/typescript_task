@@ -26,7 +26,7 @@ const employee: EmployeeEvaluation = {
 }
 
 if (employee.score >= 80) {
-    console.log("approved");
+    console.log("Bonus Approved");
 } else {
-    console.log("prankk")
+    console.log("Bonus not approved");
 }

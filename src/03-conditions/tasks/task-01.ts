@@ -38,7 +38,7 @@ const student: StudentData = {
 
 if (student.finalScore >= 75 && student.attendance >= 90 && student.tuitionPaid){
 
-    console.log("congrats yea");
+    console.log("Eligible");
 } else {
-    console.log("kasian deh luwh");
+    console.log("Not Eligible");
 }
