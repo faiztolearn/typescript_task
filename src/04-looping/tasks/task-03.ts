@@ -23,3 +23,41 @@
  * - Number of passing students
  * - Number of failing students
  */
+
+
+type examResult = {
+  totalScore: number;
+  averageScore: number;
+  passingCount: number;
+  failingCount: number;
+};
+
+const scores: number[] = [
+  82, 75, 91, 64, 88, 73, 95, 80, 69, 77,
+  84, 92, 58, 79, 86, 71, 90, 67, 83, 76
+];
+
+const passingScore = 75;
+
+let totalScore = 0;
+let passingCount = 0;
+let failingCount = 0;
+
+for (const score of scores) {
+  totalScore += score;
+
+  if (score >= passingScore) {
+    passingCount++;
+  } else {
+    failingCount++;
+  }
+}
+
+const result: examResult = {
+  totalScore,
+  averageScore: totalScore / scores.length,
+  passingCount,
+  failingCount
+};
+
+console.log(result);

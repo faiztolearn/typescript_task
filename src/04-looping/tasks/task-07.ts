@@ -8,6 +8,13 @@
  * - Calculate the attendance percentage.
  */
 
+type attendanceResult = {
+  presentCount: number;
+  absentCount: number;
+  absentStudents: string[];
+  attendancePercentage: number;
+};
+
 const attendances = [
   { name: "Alya", present: true },
   { name: "Budi", present: true },
@@ -18,3 +25,27 @@ const attendances = [
   { name: "Gita", present: true },
   { name: "Hana", present: false }
 ];
+
+let presentCount = 0;
+let absentCount = 0;
+const absentStudents: string[] = [];
+
+for (const attendance of attendances) {
+    if (attendance.present) {
+        presentCount++;
+    } else {
+        absentCount++;
+        absentStudents.push(attendance.name);
+    }
+}
+
+const attendancePercentage = (presentCount / attendances.length) * 100;
+
+const result: attendanceResult = {
+    presentCount,
+    absentCount,
+    absentStudents,
+    attendancePercentage
+};
+
+console.log(result);
