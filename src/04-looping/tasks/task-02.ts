@@ -32,7 +32,7 @@ for (let floor = 1; floor <= 5; floor++) {
     for (let slot = 1; slot <=20; slot++) {
         console.log(`Floor ${floor} - Slot ${slot}`);
     }
-    console.log(); // Print a blank line after each floor
+    console.log();
 }
 
 /*still dont know how it works, but the main logic is implemented.*/
