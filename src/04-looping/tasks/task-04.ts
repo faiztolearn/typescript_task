@@ -28,7 +28,7 @@ type salesAnalysis = {
   totalRevenue: number;
   highestTransaction: number;
   lowestTransaction: number;
-  highValueTransactions: number;
+  numberHighValueTransactions: number;
   averageTransaction: number;
 };
 
@@ -48,7 +48,7 @@ const sales: number[] = [
 let totalRevenue = 0;
 let highestTransaction = sales[0];
 let lowestTransaction = sales[0];
-let highValueTransactions = 0;
+let numberHighValueTransactions = 0;
 
 for (const transaction of sales) {
   totalRevenue += transaction;
@@ -62,7 +62,7 @@ for (const transaction of sales) {
   }
 
   if (transaction >= 300000) {
-    highValueTransactions++;
+    numberHighValueTransactions++;
   }
 }
 
@@ -72,7 +72,7 @@ const analysis: salesAnalysis = {
   totalRevenue,
   highestTransaction,
   lowestTransaction,
-  highValueTransactions,
+  numberHighValueTransactions,
   averageTransaction
 };
 
